@@ -1,0 +1,208 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+/*@media only screen and (max-width: 600px){
+
+    .grid--default{
+        
+        grid-template-areas:
+        "cabeza cabeza cabeza"
+        "espacio nav espacio"
+        "espacio cuerpo espacio"
+        "pie pie pie";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr repeat(3,auto);
+    }
+    
+    .lista{
+        display: flex;
+        grid-area: nav;
+    }
+
+    .div__informacion{
+        
+        grid-area: cuerpo;
+       
+    }
+    
+}*/
+
+p{
+   
+    color: black;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    
+    /*background-color: rgb(99, 196, 99);*/
+    background-image: linear-gradient(rgba(24, 224, 24, 0.74), rgba(223, 223, 79, 0.705) );
+
+    
+}
+
+.grid--default{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza cabeza"
+    "seleccion cuerpo cuerpo espacio"
+    "pie pie pie pie";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr repeat(6,auto);
+}
+
+header{
+    grid-area: cabeza;
+}
+
+footer{
+    grid-area: pie;
+}
+
+.rojo{
+    display: inline-block;
+    background-color: rgb(86, 221, 86);
+    width: 50%;
+    color: black;
+    text-overflow: clip;
+    /*margin: 50px 200px 0 350px;
+    padding: 30px;*/
+    border: 6px solid rgb(220, 238, 118)
+
+}
+ 
+.div__informacion{
+    color: black;
+    background-image: linear-gradient(rgba(255, 255, 244, 0.966), rgba(18, 216, 67, 0.466));
+    margin: 0 19% 0 26%;
+    padding: 50px 10px;  
+    position: absolute;
+    top: 30%;
+    grid-area: cuerpo;
+    background-size: cover;
+    
+    
+}
+
+.lista{
+    list-style: none;
+    width: 60px; 
+    grid-area: seleccion;
+}
+
+div{
+    margin: 0 0 0 0;
+}
+
+.logo{
+    display: inline-block;
+    position: absolute;
+    border-radius: 800px;
+    top: 3%;
+    right: 1%;
+}
+  
+.div__contenedor--presentacion{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: 
+    "cabeza" ;
+    grid-area: cabeza;
+}
+    
+.nav__hyperlink{
+    color: black;
+    text-decoration: none;
+}
+    
+.nav__item{
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin: 0 0 0 50px;
+    padding: 25px 0 25px 0;
+}
+
+.nav__redes{
+    /* display: inline-block; */
+
+}
+
+
+.align-text{
+    text-align: center;
+
+ 
+}
+.color-white{
+    background-color: whitesmoke;
+}
+
+.Talle{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Telas{
+    line-height: 8px%;
+    margin:0 20% 0 0;
+
+}
+
+.productos{
+    position: relative;
+    top:5%;
+    left: 20%;
+    
+}
+
+.container__redes{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    grid-area: pie;
+}
+.produ{
+    width: 160px;
+    height: 180px;
+    padding: 0px;
+    object-fit: cover;
+    transition: transform 25;
+
+    
+    /*white-space: nowrap;*/
+
+    /*display: flex;
+    overflow-x: scroll;*/
+    
+
+  
+ 
+}
+
+/*.produ:hover{
+    transform: scale(2,2);
+    transition: all;
+    z-index: 100;
+    box-shadow: 0px 10px 10px black*/
+}
+
+.scroll{
+    display: flex;
+    overflow-x: scroll
+}
+
+
+
+}
+
+.carru{
+    margin-right: auto;
+}

@@ -1,0 +1,57 @@
+$colorprincipal: linear-gradient(rgba(24, 224, 24, 0.74), rgba(223, 223, 79, 0.705));
+$colorsecundario: black;
+
+
+
+$Colores: (
+    primario: green,
+    secundario: yellow,
+    bg: rgb(17, 240, 47),
+    hover-primario: darken (green, 20),
+    fondo: rgb(243, 234, 223),
+    precios: rgb(236, 236, 215),
+    Blanco: white,
+    Bisquek: bisque,
+    duraznoz: rgb(218, 141, 47),
+    piecito:rgba(235, 227, 227, 0.5)
+    
+);
+
+$Tipografia: (
+    letraPrimaria: arial,
+    letraSecundaria: Times New Roman,
+);
+
+   
+@mixin mediaQuery ($pantallanumero, $tamano) {
+    @if $pantallanumero == mobile {
+        @media only screen and (min-width:$tamano){
+         @content
+        };
+    } @else {
+        @media only screen and (max-width:$tamano){
+            @content
+           }
+
+    }
+    
+             
+             
+             
+
+            
+        
+
+
+
+    
+     
+        
+};
+
+
+
+
+
+    
+    
